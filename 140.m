@@ -10,18 +10,17 @@ clear
 %=================%
 %Input%
 %=================%
-XYZ = 140; % NIM
+XYZ = "140"; % NIM
 
 %=================%
 %System Parameters%
 %=================%
-strXYZ = string(XYZ);
-strXYZ = char(strXYZ);
+strXYZ = char(XYZ);
 X = strXYZ(1);
 Y = strXYZ(2);
 Z = strXYZ(3);
 
-mod1 = mod(XYZ,3);
+mod1 = mod(str2num(XYZ),3);
 if mod1 == 0
     H = 22.5*(10^-2); % in meter
 elseif mod1 == 1
@@ -30,7 +29,7 @@ else
     H = 25*(10^-2); % in meter
 end
 
-mod2 = mod(XYZ,2);
+mod2 = mod(str2num(XYZ),2);
 % angular velocity
 if mod2 == 0
     w2 = 4; % in rad/s
