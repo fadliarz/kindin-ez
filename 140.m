@@ -192,19 +192,19 @@ figure(3);
 plot(t,a_alltime(16,:));
 grid on;
 xlabel('Time [s]');
-ylabel('Slider Velocity [m/s]');
+ylabel('Slider Velocity [m/s^2]');
 title('Acceleration of Slider 6 vs Time');
 
 figure(4);
 plot(t,v_alltime(15,:));
 grid on;
 xlabel('Time [s]');
-ylabel('Angular Velocity [m/s]');
+ylabel('Angular Velocity [rad/s]');
 title('Angular Velocity of Link 5 vs Time');
 
 figure(5);
 plot(t,a_alltime(15,:));
 grid on;
 xlabel('Time [s]');
-ylabel('Angular Acceleration [m/s]');
+ylabel('Angular Acceleration [rad/s^2]');
 title('Angular Acceleration of Link 5 vs Time');
