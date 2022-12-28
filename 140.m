@@ -140,7 +140,7 @@ for j=1:NumData
     Cq=[C0q;CPjO;CPjB;CPjD;CPjC;CPjF;Cslider4;Cslider6;Cdrive];
    
     delta_q=inv(Cq)*(-C);
-    delta_q_norm=sqrt(sum(delta_q(1:12).^2))/12;
+    delta_q_norm=sqrt(sum(delta_q(1:18).^2))/18;
     
     q=q+delta_q;
 
